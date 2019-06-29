@@ -37,5 +37,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+var port = 8080;
+app.listen(port, () =>{
+console.log("Corriendo en el puerto " + port)
+});
 module.exports = app;
